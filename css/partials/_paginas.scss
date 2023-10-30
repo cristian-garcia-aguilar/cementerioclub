@@ -1,0 +1,225 @@
+/* pagina SERVICIOS */
+
+.seccion_tarjetas {
+
+    padding: 3rem;
+    gap: 3rem;
+    @include flexit;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .tarjetas {
+    
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .tarj450 {
+            width: 400px;
+            font-family: 'Kanit', sans-serif;
+            color: gray
+        }
+        
+
+        .tarjeta {
+
+            text-align: center;
+            transition: 0.5s;
+        
+
+        &:hover {
+
+            transform: translate(0px, -20px);
+            transform: scale(1.1);
+        }
+        }
+
+        .subtitulo {
+            font-size: 2rem;
+            font-family: 'Kanit', sans-serif;
+            color: gray
+        
+        }
+    
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* pagina NOSOTROS */
+
+.tarjetas-nosotros {
+    padding: 4rem;
+    gap: 5rem;
+    @include flexit;
+    flex-wrap: wrap;
+
+
+    align-items: center;
+
+    .tarjeta-horizontal {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .img2 {
+            width: 30rem;
+            padding: 1rem;
+        }
+
+        .parrafin-nosotros {
+            width: 30rem;
+            padding: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* pagina contacto */
+
+
+
+
+
+
+/* pagina MEDIA */
+
+
+.collage {
+    padding: 3rem;
+    min-height: 50vh;
+
+    @include flexit;
+
+.collag {
+
+
+    padding: 1rem;
+    width: 60rem;
+        
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+    
+        "fotos      fotos       videos       audio"
+        "fotos      fotos       videos       otros";
+
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+    .fotos {
+            background-image: url(../img/guitarra.png);
+            background-position: center center;
+            background-size:cover;
+            grid-area: fotos;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Kanit', sans-serif;
+            font-size: 2rem;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+                color: $colorDestacado;
+                transform: scale(0.95);
+            }
+        
+        }
+
+    .videos {
+            background-image: url(../img/teclado.png);
+            background-position: center center;
+            background-size:cover;
+            grid-area: videos;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Kanit', sans-serif;
+            font-size: 2rem;
+            color: white;
+            transition: 0.2s;
+            
+
+            &:hover {
+                color: $colorDestacado;
+                transform: scale(0.95);
+            }
+        
+
+
+        }
+
+    .audio {
+            background-image: url(../img/cautines.png);
+            background-position: center center;
+            background-size:cover;
+            grid-area: audio;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Kanit', sans-serif;
+            font-size: 2rem;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+                color: $colorDestacado;
+                transform: scale(0.95);
+            }
+        }
+
+    .otros {
+            background-image: url(../img/salita.png);
+            background-position: center center;
+            background-size:cover;
+            grid-area: otros;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Kanit', sans-serif;
+            font-size: 2rem;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+                color: $colorDestacado;
+                transform: scale(0.95);
+            }
+        }
+
+
+    
+    }
+
+}

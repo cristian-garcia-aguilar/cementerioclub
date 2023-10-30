@@ -1,0 +1,21 @@
+/* HEADER */
+
+.menu1 {
+    padding: 2rem;
+
+    .menu-list {
+
+        list-style-type: none;
+        font-family: 'Kanit', sans-serif;
+        font-size: larger;
+        color: gray;
+        @include flexit;
+        gap: 2rem;
+        align-items: center;
+
+    }
+
+}
+
+
+

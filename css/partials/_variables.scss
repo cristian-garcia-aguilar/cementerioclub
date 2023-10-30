@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap');
+
+$colorDestacado: orange;
+
+@mixin flexit {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
